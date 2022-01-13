@@ -1,5 +1,7 @@
 # Combining the power of open-source projects and communities
 
+![Open-source projects](images/main-image.png)
+
 ## The need
 
 Suppose you are automating a web-based process.
