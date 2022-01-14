@@ -8,13 +8,15 @@ Suppose you are automating a web-based process.
 
 The target system is a modern [single-page application](https://en.wikipedia.org/wiki/Single-page_application) built with [React](https://reactjs.org/).
 
-Modern web apps are dynamic. The views change on the fly. The HTML markup that defines the structure of those views is ever-mutating. Things happen immediately, almost immediately, after a while, and sometimes in no particular order ([asynchronously](<https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)>)).
+Modern web apps are dynamic (/dʌɪˈnamɪk/: "characterized by constant change, activity, or progress").
 
-You need an automation tool capable of handling all that dynamic behavior.
+The views change on the fly. The HTML markup that defines the structure of those views is ever-mutating. Things happen immediately, almost immediately, after a while, and sometimes in no particular order ([asynchronously](<https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)>)).
+
+To automate a modern target application, you need a modern automation tool capable of handling all that dynamic behavior.
 
 ## The solution - Part I
 
-Let's see. [Playwright](https://playwright.dev/) seems promising. An open-source tool for browser automation that uses the multitude of open-source JavaScript projects out there to build something powerful.
+Let's see. [Playwright](https://playwright.dev/) seems promising. An open-source solution for browser automation that uses the multitude of open-source JavaScript projects out there to build something powerful.
 
 > "Playwright enables reliable end-to-end testing for modern web apps." - https://playwright.dev/
 
@@ -26,17 +28,17 @@ Open-source contributions can come in as feature requests, bug reports, solution
 
 One needs to know JavaScript quite well to work with Playwright effectively.
 
-Maybe there's a more high-level solution for writing the automation that does not require JavaScript knowledge? Something slightly more human-readable than JavaScript code?
+Maybe there's a more high-level solution for writing the automation? Something slightly more human-readable than JavaScript code?
 
 ## The solution - Part II
 
-Another open-source project, [Robot Framework](https://robotframework.org/), seems promising:
+Another open-source project, [Robot Framework](https://robotframework.org/), looks promising:
 
 > "Robot Framework is a generic open source automation framework. Robot Framework has an easy syntax, utilizing human-readable keywords." - https://robotframework.org/
 
-Human-readable syntax sounds excellent. Again, there seems to be an active community contributing to the project.
+Human-readable syntax sounds excellent. Again, there's an active community contributing to the project.
 
-But Robot Framework seems to be written in [Python](https://www.python.org/), an open-source programming language. Surely it can not work with Playwright since that is JavaScript-based?
+But Robot Framework is written in [Python](https://www.python.org/), an open-source programming language. Surely it can not work with Playwright since that is JavaScript-based?
 
 [Robot Framework Browser](https://robotframework-browser.org/). What's this?
 
@@ -50,7 +52,7 @@ Maybe there's another solution that enables the use of Playwright, Robot Framewo
 
 ## The solution - Part III
 
-Yet another open-source project, [rcc](https://github.com/robocorp/rcc), seems to do the trick of making things more convenient:
+Yet another open-source project, [rcc](https://github.com/robocorp/rcc), does the trick of making things more convenient:
 
 > "RCC is a set of tooling that allows you to create, manage, and distribute Python-based self-contained automation packages. RCC is a foundation that allows anyone to build and share automation with ease." - https://github.com/robocorp/rcc
 
@@ -61,6 +63,10 @@ Now you still need a good tool for authoring the automation. The tool should sup
 ## The solution - Part IV
 
 [Robocorp](https://robocorp.com/) suggests the use of [VS Code](https://code.visualstudio.com/), an open-source integrated development environment (IDE) plus [a couple of open-source extensions for building automations](https://marketplace.visualstudio.com/search?term=robocorp&target=VSCode&category=All%20categories&sortBy=Relevance).
+
+> "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows." - https://code.visualstudio.com/
+
+> "The Robocorp extension makes it easy to create Python or Robot Framework based automation projects and software robots." - https://marketplace.visualstudio.com/items?itemName=robocorp.robocorp-code
 
 ## Together, we can accomplish great things
 
